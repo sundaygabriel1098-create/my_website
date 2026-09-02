@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel's Portfolio</title>
+    <style>
+        img{
+            width:20px;
+            border:1px solid black;
+        }
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        body{
+            font-family: Arial, sans-serif;
+            line-height:1.6;
+            background:#f4f4f4;
+            color:#222;
+        }
+        header{
+            background:#111;
+            color:white;
+            position:sticky;
+            top:0;
+            z-index:1000;
+        }
+        nav{
+            max-width:1100px;
+            margin: auto;
+            padding:15px 20px;
+            display:flex;
+            justify-content: space-between;
+            align-items:center;
+        }
+        nav h2{
+            color:#00bcd4;
+        }
+        nav ul{
+            list-style:v bbff g fbv f f g f none;
+            gap: 20px;
+        }
+        nav a{
+            color: white;
+            text-decoration:none;
+        }
+        .hero{
+            min-height:90vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+            padding:30px;
+            background: linear-gradient(135deg, #111, #123);
+            color:white;
+        }
+        .hero h1{
+             font-size: 45px;
+        }
+        .hero span{
+            color: #00bcd4;
+        }
+        .hero h2{
+            margin:10px 0;
+        }
+        .hero p{
+            max-width:600px;
+            margin: 20px auto;
+        }
+        .button{
+            display:inline-block;
+            background:#00bcd4;
+            color:white;
+            padding:12px 25px;
+            border-radius:5px;
+            margin-top:10px;
+        }
+        .button:hover{
+            background:#0097a7;
+        }
+        section{
+            max-width:1100px;
+            margin:auto;
+            padding:70px 20px;
+        }
+        section h2{
+            text-align: center;
+            margin-bottom:30px;
+            font-size:32px;
+        }
+        .skills{
+            display:grid;
+            grid-template-columns:
+            repeat(auto-fit,minmax(220px, 1fr));
+            gap:20px;
+        }
+        .skill{
+            background:white;
+            padding:25px;
+            border-radius: 10px;
+            text-align:center 7;
+            box-shadow:0 5px 15px rgba(0,0,0,0.1);
+        }
+        .skill h3{
+            color:#00a0b5;
+        }
+        .projects{
+            display: grid;
+            grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .project{
+            background:white;
+            padding:25px;
+            border-radius:10px;
+            box-shadow:0 5px 15px rgba(0,0,0,0.1);
+        }
+        .project h3{
+            color:#00a0b5;
+        }
+        .project a{
+            display:inline-block;
+            margin-top:15px;
+            color:#008c9e;
+        }
+        .contact{
+            text-align: center;
+        }
+        footer{
+            background:#111;
+            color:white;
+            text-align: center;
+            padding:25px;
+        }
+        @media(max-width:600px){
+            nav{
+                flex-direction:column;
+                gap:10px;
+            }
+            nav ul{
+                gap:10px;
+                flex-wrap:wrap;
+                justify-content:center;
+            }
+            .hero h1{
+                font-size:35px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div style="text-align:center;">
+            <img src="VS code images/1787748123636.jpg" style="width:300px;">
+        </div>
+    </header>
+    <header>
+        <nav>
+            <h2>Gabriel</h2>
+            <ul>
+                <li><a href="# Home">Home</a></li>
+                <li><a href="# About">About</a></li>
+                <li><a href="# Skills">Skills</a></li>
+                <li><a href="# Projects">Projects</a></li>
+                <li><a href="# Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home" class="hero">
+        <div>
+            <h1>Hello, I'm <span>Gabriel</span></h1>
+            <h2>Mechatronics Student. Coder. Engineering Mathematics & Engineering Mechanics Enthusiast</h2>
+            <p>Mechatronics engineering student driven by an unstoppable pursuit of excellence at the intersection 
+                of mathematics, programming, mechanics, robotics, and aerospace-developing the expertise to understand complex systems,
+                build intelligent machines, and engineer advanced autonomous technologies that push the boundaries of the future of
+                flight. 
+            </p>
+            <a href="# Projects" class="button">
+                Explore My Work & Projects
+            </a>
+        </div>
+    </section>
+    <section id="About">
+        <h2>About Me</h2>
+        <p>I'm a Mechatronics Engineering student driven by an unstoppable curiosity for how complex syatems work and an equally 
+            strong desire to build them. My interests span mathematics, programming, mechanics, robotics, and aerospace engineering,
+            where I'm especially drawn to intelligent and automonous syatems. I enjoy turning mathematical concepts and engineering 
+            priciples into practical ideas, constantly challenging myself to learn deeper, think smarter, and improve my technical abilities.
+            My long-term goal is to combine these disciplines to contribute to advanced engineering and aerospace technologies that push 
+            what intelligent machines can achieve.
+        </p>
+    </section>
+    <section id="Skills">
+        <h2>My Skills</h2>
+        <div class="Skill">
+            <h3>HTML</h3>
+            <p>I enjoy desigining and developing well-structured websites, combining clean layouts, thoughtful user 
+                interfaces, and functional code to turn ideas into engaging digital experiences.
+            </p>
+        </div>
+    </section>
+    <section id="Projects">
+        <h2>My Projects</h2>
+      <div class="Projects">
+        <h3>School Website</h3>
+        <p>I create simple, responsive websites that are clean, functional, and easy to navigate—turning ideas into practical digital experiences that work smoothly across phones, tablets, and desktops.</p>
+        <a href="#">Explore Project</a>
+        <div class="Project">
+            <h3>Registration Form</h3>
+            <p>
+                A simple and responsive online registration form designed with HTML and CSS, featuring a clean, user-friendly layout for
+                collecting and organizing essential user information efficiently across different screen sizes.
+            </p>
+            <a href="#">View Project</a>
+        </div>
+      </div>
+    </section>
+    <section id="Contact">
+        <h2>Contact Me</h2>
+        <p><img src="VS code images/pin.png"></p>
+        <p>Email: sundaygabriel1098@gmail.com</p>
+        <p><img src="VS code images/phone.png">: +234 9031756577</p>
+        <a href="mailto:sundaygabriel1098@gmail.com" class="button">Send Me an Email</a>
+    </section>
+    <footer>
+        <p>
+            &copy;2026Gabriel.All Rights Reserved.
+        </p>
+    </footer>
+</body>
+</html>
